@@ -4,8 +4,7 @@
         {
             "image": "823311675220.dkr.ecr.us-east-1.amazonaws.com/nginx:v_%BUILD_NUMBER%",
             "name": "nginx",
-            "cpu": 10,
-            "memory": 256,
+            "cpu": 0,            
             "essential": true,
             "portMappings": [
                 {
