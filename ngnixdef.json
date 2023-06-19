@@ -2,6 +2,8 @@
     "family": "ngnixdef",
     "executionRoleArn": "arn:aws:iam::823311675220:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
+    "cpu": "2048",
+    "memory": "4096",
     "containerDefinitions": [
         {
             "image": "823311675220.dkr.ecr.us-east-1.amazonaws.com/nginx:v_%BUILD_NUMBER%",
@@ -17,7 +19,9 @@
             ]
         }
     ],
-  "memory": "2048",
+  "runtimePlatform": {
+      "operatingSystemFamily": "LINUX"
+  },
   "taskRoleArn": "arn:aws:iam::823311675220:role/AWSECSTaskRole",
   "requiresCompatibilities": [
     "EC2",
