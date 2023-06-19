@@ -18,7 +18,7 @@
     ],
   "memory": "2048",
   "taskRoleArn": "arn:aws:iam::823311675220:role/AWSECSTaskRole",
-  "compatibilities": [
+  "requiresCompatibilities": [
     "EC2",
     "FARGATE"
   ]
