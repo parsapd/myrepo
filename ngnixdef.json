@@ -1,6 +1,7 @@
 {
     "family": "ngnixdef",
     "executionRoleArn": "arn:aws:iam::823311675220:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
     "containerDefinitions": [
         {
             "image": "823311675220.dkr.ecr.us-east-1.amazonaws.com/nginx:v_%BUILD_NUMBER%",
